@@ -8,17 +8,17 @@ This project focuses on analyzing E-Commerce transaction data to gain insights i
 
 Dataset Link: https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
-Number of Records: 522,698
+Number of Records: 541,909
 
-Number of Features: 9
+Number of Features: 8
 
-Key Features: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, TotalPrice
+Key Features: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
 Data Cleaning & Preprocessing:
 
 Removed duplicates
 
-Handled missing values (Description, CustomerID imputed appropriately)
+Handled missing values (Description(Mode), CustomerID imputed appropriately(Inetrpolation, forward and backwardfill))
 
 Excluded irrelevant transactions (e.g., bank charges, postage)
 
@@ -194,7 +194,7 @@ Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn, TensorFlow
 
 Machine Learning: Regression, Classification, Clustering, Association Rules
 
-Data Visualization: Tableau, Matplotlib, Seaborn
+Data Visualization: Matplotlib, Seaborn
 
 Deployment: Streamlit (planned for future implementation)
 

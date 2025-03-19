@@ -80,7 +80,9 @@ Apriori Algorithm for association rules
 
 Created Recommendation System based on frequent itemsets
 
-Results: Identified Top 10 frequently bought product pairs, optimized for cross-selling.
+Logistic Regression, Random Forest, XGBoost, CATBoost
+
+ Assess model performance using accuracy, precision, recall, and ROC-AUC.
 
 5️⃣ **High-Value Customer Analysis**
 
@@ -90,9 +92,9 @@ Methods:
 
 RFM Analysis (Recency, Frequency, Monetary Value)
 
-Pareto Principle (80/20 rule for revenue distribution)
+Creating High value purhcase binary columns
 
-Results: Top 20% of customers contribute 75% of revenue.
+Best Model: Random Forest (Accuracy: 97.77%, AUC-ROC: 0.9966)
 
 6️⃣ **Customer Lifetime Value (CLV) Prediction**
 
@@ -100,11 +102,19 @@ Goal: Estimate future revenue from customers.
 
 Methods:
 
-Gamma-Gamma & Beta-Geometric models
+Feature Engineering:
 
-Linear Regression, Decision Trees for CLV prediction
+Average Purchase Value: Calculated by dividing the total monetary value by the frequency of purchases.
 
-Best Model: Gamma-Gamma model (Predicted lifetime revenue within 5% error margin)
+Customer Lifespan: Assumed to be 365 days for the analysis.
+
+Customer Lifetime Value (CLV): Derived using the formula: [ \text{CLV} = \text{Average Purchase Value} \times \text{Frequency} \times \text{Customer Lifespan} ]
+
+Models: Random Forest, XGBoost, CATBoost regressors
+
+evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R2)
+
+Best Model: CatBoost (R2:99.05)
 
 7️⃣ **Total Price Prediction**
 
@@ -117,18 +127,6 @@ Linear Regression with Polynomial Features (Degree = 2) (Final Model)
 Compared with Ridge, Lasso, ElasticNet, XGBoost
 
 Best Model: Polynomial Regression (R²: 0.98, RMSE: 0.1281)
-
-8️⃣ **Purchase Behavior Analysis**
-
-Goal: Understand purchasing trends across different customer segments.
-
-Methods:
-
-Time-Series Analysis (Seasonal trends, weekday/weekend purchases)
-
-Customer segmentation & high-frequency item analysis
-
-Results: Identified peak sales times, seasonality trends, and customer preferences.
 
 📊** Results Summary**
 
@@ -148,31 +146,33 @@ AUC-ROC: 0.91
 
 K-Means (K=4)
 
-Silhouette Score: 0.73
+Silhouette Score: 0.76
 
 **Purchase Probability**
 
-Decision Tree
+CatBoost
 
-ROC-AUC: 0.89
+ROC-AUC: 0.96
 
 **Market Basket Analysis**
 
-FP-Growth
+Apriori
 
 Frequent Itemsets
 
 **High-Value Customers**
 
-RFM Analysis
+Random Forest 
 
-80/20 Rule
+Accuracy: 97.77%, AUC-ROC: 0.9966
 
 **CLV Prediction**
 
-Gamma-Gamma Model
+Avergae Purchase Value, Customer Life Span, CLV
 
-5% error margin
+CatBoost 
+
+R2:99.05
 
 **Total Price Prediction**
 
@@ -180,17 +180,12 @@ Polynomial Regression
 
 R²: 0.98, RMSE: 0.1281
 
-Purchase Behavior Analysis
-
-Time-Series & Clustering
-
-Seasonal Trends
 
 🛠️ **Tech Stack & Tools Used**
 
 Languages: Python
 
-Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn, TensorFlow
+Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, CatBoost, Optuna, Matplotlib, Seaborn, TensorFlow
 
 Machine Learning: Regression, Classification, Clustering, Association Rules
 

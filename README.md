@@ -48,13 +48,13 @@ Goal: Categorize customers into meaningful groups.
 
 Methods:
 
-K-Means, DBSCAN, Hierarchical Clustering
+K-Means
 
-Features used: RFM metrics, purchasing frequency, basket size
+Features used: RFM metrics, purchasing frequency
 
 Evaluated using Silhouette Score, Davies-Bouldin Index
 
-Best Model: K-Means (Optimal K = 4, Silhouette Score = 0.73)
+Best Model: K-Means (Optimal K = 4, Silhouette Score = 0.76)
 
 3️⃣ **Predicting Customer Purchase Probability**
 
@@ -62,13 +62,13 @@ Goal: Estimate the likelihood of a customer making a future purchase.
 
 Methods:
 
-Logistic Regression, Decision Trees, Neural Networks
+Logistic Regression, Random Forest, XGBoost, CATBoost
 
 Feature Engineering: Customer tenure, purchase patterns, seasonality trends
 
-Evaluated using Log-Loss, ROC-AUC Score
+Balcancing heavy class imbalance by assing calss weights and Evaluated using Log-Loss, ROC-AUC Score
 
-Best Model: Decision Tree (ROC-AUC = 0.89)
+Best Model: CatBoost (ROC-AUC = 0.9658)
 
 4️⃣ **Market Basket Analysis & Recommendation System**
 
@@ -76,7 +76,7 @@ Goal: Identify frequently bought product combinations & suggest recommendations.
 
 Methods:
 
-Apriori Algorithm, FP-Growth for association rules
+Apriori Algorithm for association rules
 
 Created Recommendation System based on frequent itemsets
 

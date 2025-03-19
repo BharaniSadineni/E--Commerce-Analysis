@@ -34,7 +34,7 @@ Goal: Identify customers who are likely to stop purchasing.
 
 Methods:
 
-Logistic Regression, Random Forest, XGBoost, SVM
+Logistic Regression, Random Forest, XGBoost, CATBoost
 
 Feature Engineering: Recency, Frequency, Monetary (RFM), purchase patterns
 

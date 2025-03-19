@@ -1,10 +1,10 @@
-E-Commerce Data Analysis & Machine Learning Project
+**E-Commerce Data Analysis & Machine Learning Project**
 
-📌 Project Overview
+📌 **Project Overview**
 
 This project focuses on analyzing E-Commerce transaction data to gain insights into customer behavior, purchasing patterns, and business strategies using Machine Learning. It covers customer segmentation, churn prediction, market basket analysis, revenue prediction, and customer lifetime value calculations.
 
-📂 Dataset Information
+📂 **Dataset Information**
 
 Dataset Link: https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
@@ -26,9 +26,9 @@ Created new feature: TotalPrice = Quantity × UnitPrice
 
 Outlier handling using IQR-Based Capping, Winsorization, and Percentile-Based Capping
 
-🔍 Problem Statements & Methodologies
+🔍 **Problem Statements & Methodologies**
 
-1️⃣ Customer Churn Prediction
+1️⃣** Customer Churn Prediction**
 
 Goal: Identify customers who are likely to stop purchasing.
 
@@ -42,7 +42,7 @@ Evaluated using Accuracy, Precision, Recall, F1-score, AUC-ROC
 
 Best Model: XGBoost (AUC-ROC: 0.91)
 
-2️⃣ Customer Segmentation (Clustering)
+2️⃣ **Customer Segmentation (Clustering)**
 
 Goal: Categorize customers into meaningful groups.
 
@@ -56,7 +56,7 @@ Evaluated using Silhouette Score, Davies-Bouldin Index
 
 Best Model: K-Means (Optimal K = 4, Silhouette Score = 0.73)
 
-3️⃣ Predicting Customer Purchase Probability
+3️⃣ **Predicting Customer Purchase Probability**
 
 Goal: Estimate the likelihood of a customer making a future purchase.
 
@@ -70,7 +70,7 @@ Evaluated using Log-Loss, ROC-AUC Score
 
 Best Model: Decision Tree (ROC-AUC = 0.89)
 
-4️⃣ Market Basket Analysis & Recommendation System
+4️⃣ **Market Basket Analysis & Recommendation System**
 
 Goal: Identify frequently bought product combinations & suggest recommendations.
 
@@ -82,7 +82,7 @@ Created Recommendation System based on frequent itemsets
 
 Results: Identified Top 10 frequently bought product pairs, optimized for cross-selling.
 
-5️⃣ High-Value Customer Analysis
+5️⃣ **High-Value Customer Analysis**
 
 Goal: Identify top-spending customers and analyze their behavior.
 
@@ -94,7 +94,7 @@ Pareto Principle (80/20 rule for revenue distribution)
 
 Results: Top 20% of customers contribute 75% of revenue.
 
-6️⃣ Customer Lifetime Value (CLV) Prediction
+6️⃣ **Customer Lifetime Value (CLV) Prediction**
 
 Goal: Estimate future revenue from customers.
 
@@ -106,7 +106,7 @@ Linear Regression, Decision Trees for CLV prediction
 
 Best Model: Gamma-Gamma model (Predicted lifetime revenue within 5% error margin)
 
-7️⃣ Total Price Prediction
+7️⃣ **Total Price Prediction**
 
 Goal: Predict the total price of an order.
 
@@ -118,7 +118,7 @@ Compared with Ridge, Lasso, ElasticNet, XGBoost
 
 Best Model: Polynomial Regression (R²: 0.98, RMSE: 0.1281)
 
-8️⃣ Purchase Behavior Analysis
+8️⃣ **Purchase Behavior Analysis**
 
 Goal: Understand purchasing trends across different customer segments.
 
@@ -130,7 +130,7 @@ Customer segmentation & high-frequency item analysis
 
 Results: Identified peak sales times, seasonality trends, and customer preferences.
 
-📊 Results Summary
+📊** Results Summary**
 
 Problem Statement
 
@@ -138,43 +138,43 @@ Best Model/Method
 
 Key Metric(s)
 
-Customer Churn Prediction
+**Customer Churn Prediction**
 
 XGBoost
 
 AUC-ROC: 0.91
 
-Customer Segmentation
+**Customer Segmentation**
 
 K-Means (K=4)
 
 Silhouette Score: 0.73
 
-Purchase Probability
+**Purchase Probability**
 
 Decision Tree
 
 ROC-AUC: 0.89
 
-Market Basket Analysis
+**Market Basket Analysis**
 
 FP-Growth
 
 Frequent Itemsets
 
-High-Value Customers
+**High-Value Customers**
 
 RFM Analysis
 
 80/20 Rule
 
-CLV Prediction
+**CLV Prediction**
 
 Gamma-Gamma Model
 
 5% error margin
 
-Total Price Prediction
+**Total Price Prediction**
 
 Polynomial Regression
 
@@ -186,7 +186,7 @@ Time-Series & Clustering
 
 Seasonal Trends
 
-🛠️ Tech Stack & Tools Used
+🛠️ **Tech Stack & Tools Used**
 
 Languages: Python
 

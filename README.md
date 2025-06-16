@@ -43,7 +43,6 @@ This project focuses on analyzing E-Commerce transaction data to gain insights i
 4️⃣ **Market Basket Analysis & Recommendation System**  
    - **Goal:** Identify frequently bought product combinations & suggest recommendations.  
    - **Methods:** Apriori Algorithm for association rules  
-   - **Model Performance Assessment:** Accuracy, Precision, Recall, ROC-AUC.
 
 5️⃣ **High-Value Customer Analysis**  
    - **Goal:** Identify top-spending customers and analyze their behavior.  

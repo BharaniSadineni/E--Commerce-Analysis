@@ -15,7 +15,9 @@ This project focuses on analyzing E-Commerce transaction data to gain insights i
 - Excluded irrelevant transactions (e.g., bank charges, postage).
 - Created new feature: **TotalPrice = Quantity × UnitPrice**.
 - Outlier handling using IQR-Based Capping, Winsorization, and Percentile-Based Capping.
-**After the vey keen understading of data by the comrehensive & comparative preprocessing ~96.5% data is reatined**
+  
+**After the indepth understanding and keen obesrvation of data, by this comrehensive & comparative preprocessing ~96.5% data is reatined**
+
 🔍 **Problem Statements & Methodologies**
 
 1️⃣ **Customer Churn Prediction**  

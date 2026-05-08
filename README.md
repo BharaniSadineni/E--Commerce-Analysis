@@ -116,10 +116,3 @@ Languages: Python
 Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, CatBoost, Optuna, Matplotlib, Seaborn, TensorFlow
 Machine Learning: Regression, Classification, Clustering, Association Rules
 Data Visualization: Matplotlib, Seaborn
-Deployment: Streamlit (planned for future implementation)
-
-**📌 Future Improvements**
-
-Implement Deep Learning & NLP models for advanced text-based analysis.
-Deploy models using Flask/Streamlit for real-world application.
-Optimize computational efficiency for large-scale predictions.
